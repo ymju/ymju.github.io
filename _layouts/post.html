@@ -17,7 +17,10 @@ layout: default
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
-            <span class="meta">Posted by Ymju</span>
+            <span class="meta">Posted by Ymju
+              on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
+              content=page.content %}
+            </span>
           </div>
         </div>
       </div>
