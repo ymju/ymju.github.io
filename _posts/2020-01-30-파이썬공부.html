@@ -8,35 +8,42 @@ background: '/img/index.png'
 
 <h1>파이썬으로 게시판만들기 01</h1>
 
-<h2>가상환경만들기 / terminal 482 line</h2>
-
+<h2>가상환경만들기 / 순서적으로 정리</h2>
+<br />
 <h3>가상환경이 될 디렉터리를 만든다</h3>
-<p>mkdir day2 // day2라는 이름의 폴더가 생성된다.</p>
+<p>mkdir day2</p>
+<p># day2라는 이름의 폴더가 생성된다.</p>
 <br />
 <h3>가상환경을 생성한다</h3>
-<p>pyenv virtualenv 3.6.2 day2 // day2이름의 폴더에 3.6.2버전의 python 가상환경을 생성한다.</p>
-<p>cd day2</p>
+<p>pyenv virtualenv 3.6.2 day2</p>
+<p># day2이름의 폴더에 3.6.2버전의 python 가상환경을 생성한다.</p>
 <br />
 <h3>가상환경에 django를 설치한다.</h3>
-<p>pip install django==2.0.2 // 2.0.2버전의 django를 설치한다.</p>
+<p>pip install django==2.0.2</p>
+<p># 2.0.2버전의 django를 설치한다.</p>
 <br />
 <h3>admin project 생성</h3>
-<p>django-admin startproject config // config이름의 프로젝트가 생성된다.</p>
+<p>django-admin startproject config</p>
+<p># config이름의 프로젝트가 생성된다.</p>
 <br />
 <h3>관리의 편의를 위해 project명 변경</h3>
-<p>mv config django_app2 // django_app2라는 프로젝트명으로 변경</p>
+<p>mv config django_app2</p>
+<p># django_app2라는 프로젝트명으로 변경</p>
+</p>
 <br />
 <h3>내가 만든 가상환경중 선택을 한다</h3>
-<p>pyenv local (탭) // 만든 가상환경들의 리스트들을 볼 수 있다.</p>
+<p>pyenv local (탭)</p>
+<p># 만든 가상환경들의 리스트들을 볼 수 있다.</p>
 <br />
 <h3>이후 작업</h3>
 <p>python manage.py makemigrations</p>
 <p>python manage.py migrate</p>
-
 <h3>관리자가 필요할 시</h3>
 <p>python manage.py createsuperuser</p>
+<h3>로컬서버 실행하기</h3>
+<p>python manage.py runserver</p>
 <br />
 <br />
-<h3>프로젝트에대한 기본적인 세팅 상태</h3>
+<h3>여기까지가 프로젝트 생성에 대한 기본</h3>
 <p>기본적으로 파이썬에서 제공한 django와 연결되어 있으며 db를 변경하고 싶으면 setting.py에서 변경하면된다.</p>
-<p>127.0.0.1:8000 으로 들어가면 파이썬이 연결 된 페이지를 확인할 수 있다.</p>
+<p>잘 생성이 되어 있다면 127.0.0.1:8000 으로 들어가면 파이썬이 연결 된 페이지를 확인할 수 있다.</p>
