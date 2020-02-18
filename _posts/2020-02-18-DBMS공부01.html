@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Study _ DBMS_01"
+subtitle: "DBMS의 개념정리"
+date: 2020-02-18
+background: '/img/Java/coding.jpeg'
+---
+
+<h1>DBMS 쿼리문 작성</h1>
+
+<p>목적 : 면접시 손코딩을 보는 곳이 종종 존재한다. 최근 파이썬에 대한 공부를 하면서 mysql문에 대한 공부가 소홀해졌고 면접 시 문제가 나오면 해결하지 못한 경우가 많다.</p>
+<br>
+<h3>inner join과 outer join의 차이</h3>
+<p>조인이 되는 키값을 기준으로 Inner join 의 경우는 교집합, outer join 의 경우는 기준테이블 Key 집합 이라고 할 수 있다.</p>
+<img src="./../../../img/DBMS/inner_outer.jpeg" alt="">
+<p>        Inner Join        Outer Join</p>
+<p>Inner join 의 경우 A, B 테이블 키값중 양쪽에 일치하는 데이터만 대상으로 하며</p>
+<p>Outer join 의 경우 Left 냐 Right 냐에 따라 기준 테이블의 모든 키값을 대상으로 한다.</p>
+<p>Left 일경우 A, Right 일경우 B가 된다.</p>
+<br>
+<p>Inner join 예시</p>
+<p>Select *</p>
+<p>from A</p>
+<p>inner join B</p>
+<p>on A.조인키 = B.조인키</p>
+<br>
+<p>Outer join 예시</p>
+<p>select *</p>
+<p>from A</p>
+<p>Left Outer join B (Left의 경우 join 키워드를 중심으로 왼쪽에 있는 테이블 기준, Right의 경우 오른쪽기준)</p>
+<p>on A.조인키 = B.조인키</p>
